@@ -26,7 +26,7 @@ You are building a **landing page** for a fictional product called **FocusFlow**
 ### Step 1: Review the Design
 
 1. Open the **official Figma file** provided by your instructor:
-   👉 **[Open Figma Design File](https://www.figma.com/design/YfjoAoy9KjlbmIDsECNy2q/Figma-File-Template--Community-?node-id=86-150&m=dev&t=ZpA46hVhYV0rpdJW-1)**
+   👉 **[Open Figma Design File](https://www.figma.com/site/ZM8Dxe6DvfkniEvcUHrZM7/Modern--Clean-SaaS-Company--Community-?node-id=0-1&p=f&t=UfKo5dNuXvMspRGZ-0)**
 2. Click **"Duplicate to your drafts"** to get your own editable copy
 3. Switch to **Dev Mode** (toggle in top-right) to inspect elements
 4. Take 5 minutes to analyze the layout
