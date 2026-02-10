@@ -1,0 +1,57 @@
+// ═══════════════════════════════════════════════
+// Lab 07 — SCSS Mixins
+// Reusable style patterns
+// ═══════════════════════════════════════════════
+
+@use 'variables' as *;
+
+// ─── Flexbox helpers ───
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+// ─── Responsive breakpoint ───
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+// ─── Button variant ───
+// Generates background, color, and hover state
+@mixin button-variant($bg-color, $text-color: $color-white) {
+  background: $bg-color;
+  color: $text-color;
+
+  &:hover {
+    background: darken($bg-color, 10%);
+  }
+}
+
+// ─── Transition shorthand ───
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+// ─── Text truncate ───
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

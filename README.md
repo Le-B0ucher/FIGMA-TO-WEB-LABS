@@ -6,6 +6,7 @@ Welcome to the **Figma to Web** exercises repository! This collection of hands-o
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Course Modules](#course-modules)
 - [Exercise Structure](#exercise-structure)
 - [Exercises](#exercises)
 - [Figma Design Files](#figma-design-files)
@@ -54,13 +55,26 @@ This extension lets you preview your HTML files in the browser with automatic re
 2. Right-click in the editor → **Open with Live Server**
 3. You should see a basic HTML page in your browser 🎉
 
+## Course Modules
+
+Before diving into the hands-on labs, study these **theory modules** that give you the knowledge foundation for Figma-to-web integration:
+
+| # | Module | Time | Topics |
+|---|---|---|---|
+| 01 | [Design Fundamentals](course-01-design-fundamentals/) | 45–60 min | CRAP principles, color theory, typography, whitespace, visual hierarchy |
+| 02 | [Figma for Developers](course-02-figma-for-developers/) | 45–60 min | Dev Mode, inspecting properties, Auto Layout → Flexbox, exporting assets, components & variants |
+| 03 | [Design-to-Code Workflow](course-03-design-to-code-workflow/) | 40–50 min | The 7-step pipeline: Receive → Audit → Extract → Plan → Build → Review → Refine |
+| 04 | [Design Systems](course-04-design-systems/) | 40–50 min | Atomic Design, design tokens in depth, component libraries, style guides, real-world systems |
+
+> 💡 **Recommended reading order:** Course 01 → 02 → 03 → 04, then start the labs.
+
 ## Exercise Structure
 
 Each exercise folder contains:
 
 - **README.md**: Detailed step-by-step instructions
 - **Starter code**: HTML, CSS, and/or JS files to work with
-- **Design spec**: A reference design to match (`design/` folder for visual references)
+- **Design spec**: A reference design to match (`course-02-figma-for-developers/design/` folder for visual references)
 
 ### How to Approach Each Exercise
 
@@ -87,14 +101,21 @@ Getting started with Figma from a developer perspective. Theory only — no code
 - [Lab 04: Responsive Design](lab-04-responsive/) — Mobile-first responsive integration
 - [Lab 05: UI Components](lab-05-ui-components/) — Build reusable components from Figma
 
-### 03. Interactivity & Project
+### 03. Interactivity
 
 - [Lab 06: JavaScript Interactions](lab-06-javascript-interactions/) — Add interactivity with vanilla JS
-- [Lab 07: Mini Project](lab-07-mini-project/) — Integrate a full Figma page from scratch
+
+### 03. Professional Tooling
+
+- [Lab 07: CSS to Sass/SCSS](lab-07-sass-scss/) — Convert CSS to SCSS with variables, nesting, mixins & partials
+
+### 04. Integration Project
+
+- [Lab 08: Mini Project](lab-08-mini-project/) — Integrate a full Figma page from scratch (capstone)
 
 ## Figma Design Files
 
-Each lab comes with a design specification in the `design/` folder.
+Each lab comes with a design specification in the `course-02-figma-for-developers/design/` folder.
 
 ### 🎨 Course Figma File
 
@@ -107,9 +128,9 @@ The official Figma design for this course is available here:
 2. Log in with your free Figma account
 3. Click **"Duplicate to your drafts"** (top-right) to get your own editable copy
 4. Switch to **Dev Mode** (toggle in top-right) to inspect spacing, colors, and fonts
-5. Use this design as the reference for **Lab 07 — Mini Project**
+5. Use this design as the reference for **Lab 08 — Mini Project**
 
-> 💡 **Tip**: The `design/` folder also contains HTML reference pages that you can open in your browser to see the design.
+> 💡 **Tip**: The `course-02-figma-for-developers/design/` folder also contains HTML reference pages that you can open in your browser to see the design.
 
 ## Student Report
 
@@ -159,12 +180,18 @@ Your report must include the following sections:
    - Your JavaScript code with explanations
    - Any bonus interactions you implemented
 
-9. **Lab 07 — Mini Project**
-   - Screenshots of the final page (mobile + desktop)
-   - Self-evaluation against the grading criteria
-   - What you learned and what you would improve
+9. **Lab 07 — CSS to Sass/SCSS**
+    - Screenshots of your SCSS file structure (partials)
+    - Comparison: original CSS vs compiled SCSS output
+    - Explanation of the mixins you created and why
+    - Reflection: when is Sass worth the extra tooling?
 
-10. **Conclusion**
+10. **Lab 08 — Mini Project**
+    - Screenshots of the final page (mobile + desktop)
+    - Self-evaluation against the grading criteria
+    - What you learned and what you would improve
+
+11. **Conclusion**
     - Summary of what you learned throughout the course
     - Your favorite lab and why
     - Skills you plan to develop next

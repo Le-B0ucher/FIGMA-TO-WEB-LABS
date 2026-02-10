@@ -30,7 +30,7 @@ You will use Flexbox to recreate a page layout from Figma with:
 
 ### Step 2: Open the Reference
 
-1. Open `design/reference.html` in your browser or study the Figma design
+1. Open `../course-02-figma-for-developers/design/reference-landing-page.html` in your browser or study the Figma design
 2. Pay attention to how elements are **aligned** and **spaced**
 
 ### Step 3: Preview

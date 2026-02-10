@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 07 — CSS to Sass/SCSS</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Compiled CSS (output of SCSS compilation) -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="page">
+    <h1 class="page__title">Lab 07 — Sass/SCSS Components</h1>
+    <p class="page__text">
+      The same components from Lab 05, now built with SCSS: variables, nesting,
+      mixins, and partials.
+    </p>
+
+    <!-- ─── Buttons ─── -->
+    <section class="page__section">
+      <h2>Buttons</h2>
+      <div class="button-group">
+        <button class="button button--primary">Primary</button>
+        <button class="button button--secondary">Secondary</button>
+        <button class="button button--ghost">Ghost</button>
+      </div>
+    </section>
+
+    <!-- ─── Cards ─── -->
+    <section class="page__section">
+      <h2>Cards</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3 class="card__title">Focus Timer</h3>
+          <p class="card__text">
+            Stay productive with a simple Pomodoro-style timer that keeps you on
+            track throughout the day.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Task Manager</h3>
+          <p class="card__text">
+            Organise your tasks with drag-and-drop simplicity. Prioritise what
+            matters and get things done.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Analytics</h3>
+          <p class="card__text">
+            Understand your productivity patterns with clear charts and weekly
+            summaries.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Input Fields ─── -->
+    <section class="page__section">
+      <h2>Input Fields</h2>
+      <label class="field">
+        <span class="field__label">Email address</span>
+        <input
+          class="field__input"
+          type="email"
+          placeholder="you@example.com"
+        />
+      </label>
+      <label class="field">
+        <span class="field__label">Password</span>
+        <input class="field__input" type="password" placeholder="••••••••" />
+      </label>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+// ═══════════════════════════════════════════════
+// Lab 07 — Card Component (SCSS)
+// Uses: nesting, &, variables
+// ═══════════════════════════════════════════════
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ─── Card ───
+.card {
+  padding: $space-lg;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  background: $color-white;
+  @include transition(box-shadow);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: $space-sm;
+    font-size: 20px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-muted;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+// ─── Card grid layout ───
+.card-grid {
+  @include flex($gap: $space-md);
+  flex-wrap: wrap;
+
+  .card {
+    flex: 1;
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,47 @@
+// ═══════════════════════════════════════════════
+// Lab 07 — Button Component (SCSS)
+// Uses: nesting, &, mixin, variables
+// ═══════════════════════════════════════════════
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ─── Button base ───
+.button {
+  display: inline-block;
+  padding: 10px $space-lg;
+  border: 2px solid transparent;
+  border-radius: $radius-md;
+  cursor: pointer;
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  @include transition(background, color, border-color);
+
+  // ─── Variants (using mixin) ───
+  &--primary {
+    @include button-variant($color-primary);
+  }
+
+  &--secondary {
+    @include button-variant($color-secondary);
+  }
+
+  &--ghost {
+    background: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+// ─── Button group layout ───
+.button-group {
+  @include flex($gap: 12px);
+  flex-wrap: wrap;
+}

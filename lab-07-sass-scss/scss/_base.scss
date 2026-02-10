@@ -1,0 +1,51 @@
+// ═══════════════════════════════════════════════
+// Lab 07 — Base / Reset Styles
+// TODO: Students — replace hard-coded values
+//       with $variables from _variables.scss
+// ═══════════════════════════════════════════════
+
+@use 'variables' as *;
+
+// ─── Reset ───
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// ─── Body ───
+body {
+  margin: 0;
+  padding: $space-lg;
+  font-family: $font-body;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+// ─── Headings ───
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+  line-height: 1.2;
+}
+
+// ─── Page Layout ───
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+
+  &__title {
+    margin-bottom: $space-sm;
+  }
+
+  &__text {
+    color: $color-muted;
+    margin-bottom: $space-xl;
+  }
+
+  &__section {
+    margin-bottom: $space-xl;
+  }
+}

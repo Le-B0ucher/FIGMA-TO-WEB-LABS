@@ -1,0 +1,18 @@
+// ═══════════════════════════════════════════════
+// Lab 07 — Main SCSS Entry Point
+// This file imports all partials.
+// Live Sass Compiler watches this file and
+// compiles it into css/main.css.
+// ═══════════════════════════════════════════════
+
+// 1. Variables & Mixins (no CSS output, just definitions)
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// 2. Base styles (reset, body, page layout)
+@use 'base';
+
+// 3. Components
+@use 'buttons';
+@use 'cards';
+@use 'fields';

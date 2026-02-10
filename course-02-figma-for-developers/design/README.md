@@ -26,7 +26,7 @@ The instructor has provided an official Figma design file for this course:
 2. Log in with your **free** Figma account
 3. Click **"Duplicate to your drafts"** (top-right) to get your own copy
 4. Switch to **Dev Mode** to inspect spacing, colors, and fonts
-5. This is the design you must integrate in **Lab 07 — Mini Project**
+5. This is the design you must integrate in **Lab 08 — Mini Project**
 
 ### Additional Free Figma Templates
 

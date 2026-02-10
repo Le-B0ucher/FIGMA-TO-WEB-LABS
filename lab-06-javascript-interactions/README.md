@@ -285,5 +285,5 @@ You've successfully completed this exercise when:
 ---
 
 **Previous**: [Lab 05: UI Components](../lab-05-ui-components/) ←
-**Next**: [Lab 07: Mini Project](../lab-07-mini-project/) →
+**Next**: [Lab 07: CSS to Sass/SCSS](../lab-07-sass-scss/) →
 **[Back to Course Home](../README.md)**

@@ -21,7 +21,7 @@ You will look at a simple landing page design and translate its visual structure
 
 ### Step 1: Open the Reference Design
 
-1. Open `design/reference.html` in your browser (if available) **or** look at the Figma design provided by your instructor
+1. Open `../course-02-figma-for-developers/design/reference-landing-page.html` in your browser (if available) **or** look at the Figma design provided by your instructor
 2. Identify the main sections visually before coding
 
 ### Step 2: Open the Starter File

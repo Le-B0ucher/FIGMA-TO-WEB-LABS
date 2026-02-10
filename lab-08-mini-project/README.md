@@ -1,4 +1,4 @@
-# Lab 07: Mini Project — Integrate a Complete Figma Landing Page
+# Lab 08: Mini Project — Integrate a Complete Figma Landing Page
 
 **Difficulty**: ⭐⭐⭐ Intermediate
 **Time**: 60–90 minutes
@@ -32,7 +32,7 @@ You are building a **landing page** for a fictional product called **FocusFlow**
 4. Take 5 minutes to analyze the layout
 5. Write down: colors, fonts, sections, components
 
-> 💡 You can also use the HTML reference in `design/reference-landing-page.html` as a visual guide.
+> 💡 You can also use the HTML reference in `../course-02-figma-for-developers/design/reference-landing-page.html` as a visual guide.
 
 ### Step 2: Plan Your Approach
 
@@ -228,7 +228,8 @@ This is your final exercise. You've learned how to go from a Figma design to a f
 - Lab 04: Responsive design
 - Lab 05: Reusable UI components
 - Lab 06: JavaScript interactivity
-- Lab 07: Full page integration ← **You are here!**
+- Lab 07: CSS to Sass/SCSS
+- Lab 08: Full page integration ← **You are here!**
 
 **Next steps:**
 - Push your code to GitHub
@@ -240,5 +241,5 @@ Good luck! 🚀
 
 ---
 
-**Previous**: [Lab 06: JavaScript Interactions](../lab-06-javascript-interactions/) ←
+**Previous**: [Lab 07: CSS to Sass/SCSS](../lab-07-sass-scss/) ←
 **[Back to Course Home](../README.md)**

@@ -27,7 +27,7 @@ You will take the HTML structure from Lab 01 and apply **colors and typography**
 
 ### Step 2: Open the Reference Design
 
-1. Open `design/reference.html` in your browser **or** look at the Figma design
+1. Open `../course-02-figma-for-developers/design/reference-landing-page.html` in your browser **or** look at the Figma design
 2. Note the colors and fonts used
 
 ### Step 3: Preview Your Work
