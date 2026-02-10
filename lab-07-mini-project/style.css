@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Playfair+Display:wght@700&display=swap");
+
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-primary: #2563eb;
+  --color-secondary: #0ea5e9;
+  --font-body: "Source Sans 3", Arial, sans-serif;
+  --font-heading: "Playfair Display", "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav a {
+  margin-right: 12px;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero__text h1 {
+  font-family: var(--font-heading);
+  margin-top: 0;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.features {
+  margin-bottom: 32px;
+}
+
+.features__grid {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+}
+
+.card__text {
+  color: var(--color-muted);
+}
+
+.pricing {
+  margin-bottom: 32px;
+}
+
+.pricing__box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+}
+
+.pricing__text {
+  color: var(--color-muted);
+}
+
+.site-footer {
+  margin-top: 24px;
+  color: var(--color-muted);
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.button--primary {
+  background: var(--color-primary);
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+}

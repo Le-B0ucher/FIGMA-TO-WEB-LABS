@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Playfair+Display:wght@700&display=swap");
+
+:root {
+  --color-bg: #f9fafb;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-primary: #1d4ed8;
+  --font-body: "Source Sans 3", Arial, sans-serif;
+  --font-heading: "Playfair Display", "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+.logo {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+nav a {
+  margin-right: 12px;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+p {
+  color: var(--color-muted);
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}

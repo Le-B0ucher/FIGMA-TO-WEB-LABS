@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-primary: #2563eb;
+  --color-secondary: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.page__section {
+  margin-bottom: 24px;
+}
+
+.page__title {
+  margin-bottom: 8px;
+}
+
+.page__text {
+  color: var(--color-muted);
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.button--primary {
+  background: var(--color-primary);
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  margin-top: 0;
+  color: var(--color-muted);
+}
+
+.field {
+  display: block;
+}
+
+.field__label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5f5;
+  border-radius: 4px;
+}

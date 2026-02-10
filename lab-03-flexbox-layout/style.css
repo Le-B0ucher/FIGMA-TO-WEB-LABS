@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-primary: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.site-header {
+  display: flex; /* Make header a flex container */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 32px;
+}
+
+.nav-links {
+  display: flex; /* Align links on one row */
+  gap: 16px; /* Space between links */
+}
+
+.nav-links a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.hero {
+  display: flex; /* Place text and image side by side */
+  gap: 24px; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 32px;
+}
+
+.hero-text {
+  flex: 1; /* Allow text to take available space */
+}
+
+.hero-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.features {
+  display: flex; /* Put cards in a row */
+  gap: 16px; /* Space between cards */
+}
+
+.card {
+  flex: 1; /* Make cards equal width */
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.card p {
+  color: var(--color-muted);
+}
