@@ -14,7 +14,7 @@
       </div>
 
       <!-- Main navigation -->
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#features">Features</a></li>
@@ -28,26 +28,99 @@
       <!-- Hero section: main message -->
       <section id="hero">
         <h1>Design to Code</h1>
-        <p>
-          Learn how to read a Figma design and build clean HTML from it.
-        </p>
+        <p>Learn how to read a Figma design and build clean HTML from it.</p>
         <a href="#features">Get Started</a>
       </section>
 
       <!-- Features section: three short points -->
       <section id="features">
         <h2>Key Features</h2>
-        <ul>
-          <li>Simple structure</li>
-          <li>Semantic HTML</li>
-          <li>Beginner friendly</li>
-        </ul>
+
+        <article>
+          <h3>Simple structure</h3>
+          <p>Clean and readable layout.</p>
+        </article>
+
+        <article>
+          <h3>Semantic HTML</h3>
+          <p>Meaningful HTML5 elements.</p>
+        </article>
+
+        <article>
+          <h3>Beginner friendly</h3>
+          <p>Easy to understand and extend.</p>
+        </article>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+
+        <blockquote>
+          <p>Great structure and clarity.</p>
+          <cite>— Alex</cite>
+        </blockquote>
+
+        <blockquote>
+          <p>Helped me understand semantic HTML.</p>
+          <cite>— Sam</cite>
+        </blockquote>
+      </section>
+
+      <section id="contact-form">
+        <h2>Get in Touch</h2>
+
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="pricing">
+        <h2>Pricing Plans</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free</th>
+              <th>Pro</th>
+              <th>Team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Projects</td>
+              <td>3</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Storage</td>
+              <td>1 GB</td>
+              <td>50 GB</td>
+              <td>200 GB</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
     <!-- Page footer: simple info -->
     <footer id="contact">
       <p>Contact us at hello@example.com</p>
+      <small>© 2026 BrandName</small>
     </footer>
   </body>
 </html>
