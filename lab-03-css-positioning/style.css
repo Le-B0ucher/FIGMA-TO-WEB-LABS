@@ -20,14 +20,10 @@ body {
   line-height: 1.6;
 }
 
-/* ===========================
-   TODO: Style the elements below
-   Follow the README instructions
-   =========================== */
-
-/* --- Sticky Header --- */
 .site-header {
-  /* TODO: Make this header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 50;
   padding: 12px 24px;
   background: #ffffff;
   border-bottom: 1px solid var(--color-border);
@@ -41,15 +37,19 @@ body {
   font-size: 18px;
 }
 
-/* --- Navigation Links (inline-block) --- */
 .nav-link {
-  /* TODO: Make links inline-block with padding */
+  display: inline-block;
+  padding: 8px 16px;
   text-decoration: none;
   color: var(--color-text);
   font-weight: 600;
 }
 
-/* --- Page layout --- */
+.nav-link:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
 .page {
   max-width: 800px;
   margin: 0 auto;
@@ -60,7 +60,6 @@ body {
   margin-bottom: 48px;
 }
 
-/* --- Display demo tags --- */
 .demo-box {
   padding: 16px;
   border: 2px dashed var(--color-border);
@@ -78,18 +77,19 @@ body {
 }
 
 .tag--block {
-  /* TODO: display: block */
+  display: block;
 }
 
 .tag--inline {
-  /* TODO: display: inline (default for span) */
+  display: inline;
 }
 
 .tag--inline-block {
-  /* TODO: display: inline-block with width/height */
+  display: inline-block;
+  width: 140px;
+  height: 32px;
 }
 
-/* --- Cards with absolute badges --- */
 .card-grid {
   display: flex;
   gap: 16px;
@@ -97,7 +97,7 @@ body {
 }
 
 .card {
-  /* TODO: position: relative (creates context for badge) */
+  position: relative;
   flex: 1 1 200px;
   padding: 20px;
   background: #ffffff;
@@ -106,7 +106,10 @@ body {
 }
 
 .card__badge {
-  /* TODO: position: absolute, top-right corner */
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
   background: #ef4444;
   color: #ffffff;
   padding: 4px 10px;
@@ -130,40 +133,48 @@ body {
   font-size: 14px;
 }
 
-/* --- Tooltip (absolute) --- */
 .tooltip-wrapper {
-  /* TODO: position: relative; display: inline-block */
+  position: relative;
+  display: inline-block;
   cursor: help;
   border-bottom: 1px dotted var(--color-muted);
 }
 
 .tooltip {
-  /* TODO: position: absolute, above the text */
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
   padding: 6px 12px;
   background: #1e293b;
   color: #ffffff;
   font-size: 12px;
   border-radius: 4px;
   white-space: nowrap;
-  /* Hidden by default */
   visibility: hidden;
   opacity: 0;
 }
 
-/* TODO: Show tooltip on hover of wrapper */
+.tooltip-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
-/* --- Overflow demo --- */
 .scrollable {
-  /* TODO: max-height + overflow-y: auto */
+  max-height: 200px;
+  overflow-y: auto;
   padding: 16px;
   background: #ffffff;
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
-/* --- Back to top button (fixed) --- */
 .back-to-top {
-  /* TODO: position: fixed, bottom-right corner */
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
   display: inline-flex;
   align-items: center;
   justify-content: center;
