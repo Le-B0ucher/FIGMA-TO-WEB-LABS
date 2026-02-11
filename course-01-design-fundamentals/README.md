@@ -223,9 +223,13 @@ Blur your eyes (or squint) while looking at a design. The elements you can still
 ## Self-Check Questions
 
 1. You receive a design where two buttons look *almost* the same but one is slightly darker. Which CRAP principle is being violated?
-2. Why do most UI color palettes include only 1–2 brand colors but 3–5 neutral shades?
-3. A designer hands you a mockup where body text is 14px with a line-height of 1.1. What would you suggest changing, and why?
-4. Explain the difference between *margin* (CSS) and *whitespace* (design principle).
+   On oublie ici le principe de contraste.
+3. Why do most UI color palettes include only 1–2 brand colors but 3–5 neutral shades?
+   Les neutres premettent de structurer alors que les couleurs de marques sont pour les actios importantes.
+5. A designer hands you a mockup where body text is 14px with a line-height of 1.1. What would you suggest changing, and why?
+   body text: 16px et line-height: 1.6
+7. Explain the difference between *margin* (CSS) and *whitespace* (design principle).
+   Le whitespace est un principe visuel alors que le margin est une réel propriété CSS.
 
 ---
 
