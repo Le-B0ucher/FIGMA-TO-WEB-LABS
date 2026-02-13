@@ -5,6 +5,8 @@
   --color-text: #0f172a;
   --color-muted: #64748b;
   --color-primary: #2563eb;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
 }
 
 * {
@@ -57,7 +59,7 @@ body {
   margin-top: 12px;
   padding: 10px 16px;
   background: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-surface);
   text-decoration: none;
   font-weight: 600;
 }
@@ -70,8 +72,8 @@ body {
 .card {
   flex: 1; /* Make cards equal width */
   padding: 16px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
 }
 
 .card p {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP-01 HTML Structure</title>
+    <title>Lab 01 HTML Structure</title>
   </head>
   <body>
     <!-- Site header: logo + navigation -->
@@ -26,34 +26,38 @@
     <!-- Main content of the page -->
     <main>
       <!-- Hero section: main message -->
-      <section id="hero">
-        <h1>Design to Code</h1>
+      <section id="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Design to Code</h1>
         <p>Learn how to read a Figma design and build clean HTML from it.</p>
         <a href="#features">Get Started</a>
       </section>
 
       <!-- Features section: three short points -->
-      <section id="features">
-        <h2>Key Features</h2>
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title">Key Features</h2>
 
         <article>
+          <p aria-hidden="true">[Icon]</p>
           <h3>Simple structure</h3>
           <p>Clean and readable layout.</p>
         </article>
 
         <article>
+          <p aria-hidden="true">[Icon]</p>
           <h3>Semantic HTML</h3>
           <p>Meaningful HTML5 elements.</p>
         </article>
 
         <article>
+          <p aria-hidden="true">[Icon]</p>
           <h3>Beginner friendly</h3>
           <p>Easy to understand and extend.</p>
         </article>
       </section>
 
-      <section id="testimonials">
-        <h2>Testimonials</h2>
+      <!-- Testimonials section: customer quotes -->
+      <section id="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Testimonials</h2>
 
         <blockquote>
           <p>Great structure and clarity.</p>
@@ -66,8 +70,9 @@
         </blockquote>
       </section>
 
-      <section id="contact-form">
-        <h2>Get in Touch</h2>
+      <!-- Contact form: user input form -->
+      <section id="contact-form" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Get in Touch</h2>
 
         <form action="#" method="POST">
           <fieldset>
@@ -87,8 +92,9 @@
         </form>
       </section>
 
-      <section id="pricing">
-        <h2>Pricing Plans</h2>
+      <!-- Pricing table: plan comparison -->
+      <section id="pricing" aria-labelledby="pricing-title">
+        <h2 id="pricing-title">Pricing Plans</h2>
 
         <table>
           <thead>
@@ -111,6 +117,12 @@
               <td>1 GB</td>
               <td>50 GB</td>
               <td>200 GB</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td>Community</td>
+              <td>Email</td>
+              <td>Priority</td>
             </tr>
           </tbody>
         </table>

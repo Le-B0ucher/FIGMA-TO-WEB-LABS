@@ -3,71 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP-07 Mini Project</title>
+    <title>Lab 09 Mini Project — Aetherfield (Home)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header: logo and navigation -->
     <header class="site-header">
-      <div class="logo">FocusFlow</div>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+      <div class="logo" aria-label="Aetherfield">Aetherfield</div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#product">Product</a>
+        <a href="#journal">Journal</a>
+        <a href="#about">About</a>
+        <a href="#careers">Careers</a>
       </nav>
-      <button class="button button--primary" id="cta-button">Try Free</button>
+      <a class="text-link" href="#get-started">Get started</a>
     </header>
 
     <!-- Main content -->
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <section id="product" class="hero">
         <div class="hero__text">
-          <h1>Stay focused, every day</h1>
-          <p>FocusFlow helps students organize tasks and avoid distractions.</p>
+          <h1>Sustainability insights,<br />built for business</h1>
+          <p>
+            Track inputs, model outcomes, and act with clearer signals—built for teams who
+            need reliable sustainability data.
+          </p>
           <div class="hero__actions">
-            <button class="button button--primary">Get Started</button>
-            <button class="button button--secondary">View Demo</button>
+            <button class="button button--primary" id="cta-button" type="button">Request a demo</button>
+            <button class="button button--secondary" type="button">Watch case study</button>
           </div>
         </div>
         <div class="hero__image">
-          <img src="https://placehold.co/420x280" alt="App preview" />
+          <img src="https://placehold.co/720x420" alt="Dashboard preview" />
         </div>
       </section>
 
       <!-- Features section -->
-      <section id="features" class="features">
-        <h2>Why FocusFlow?</h2>
+      <section id="about" class="features">
+        <h2>Built for clarity<br />Designed for action</h2>
         <div class="features__grid">
           <article class="card">
-            <h3 class="card__title">Plan</h3>
-            <p class="card__text">Create simple daily plans in minutes.</p>
+            <h3 class="card__title">Clarity drives action</h3>
+            <p class="card__text">
+              Only decisive metrics—measured, visible, and trusted.
+            </p>
+          </article>
+          <article class="card card--muted">
+            <h3 class="card__title">Sustainability in one place</h3>
+            <p class="card__text">
+              Aggregate inputs, model scenarios, and share outcomes.
+            </p>
           </article>
           <article class="card">
-            <h3 class="card__title">Track</h3>
-            <p class="card__text">See your progress with clear stats.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Focus</h3>
-            <p class="card__text">Stay on task with gentle reminders.</p>
+            <h3 class="card__title">Proven workflows</h3>
+            <p class="card__text">
+              Built for teams moving from spreadsheets to modern systems.
+            </p>
           </article>
         </div>
       </section>
 
-      <!-- Pricing section -->
-      <section id="pricing" class="pricing">
-        <h2>Simple pricing</h2>
-        <p class="pricing__text">One plan for students.</p>
-        <div class="pricing__box">
-          <span class="pricing__price">$5 / month</span>
-          <button class="button button--primary">Start Now</button>
+      <!-- Journal section -->
+      <section id="journal" class="journal">
+        <h2>From the journal</h2>
+        <div class="journal__list">
+          <article class="post">
+            <img class="post__image" src="https://placehold.co/560x320" alt="" />
+            <div class="post__content">
+              <h3 class="post__title">How to Build a Climate‑Ready Data Stack</h3>
+              <p class="post__meta">Tooling · 4 min</p>
+              <p class="post__excerpt">
+                A practical guide for sustainability teams on integrating emissions, waste,
+                and energy data into modern workflows.
+              </p>
+            </div>
+          </article>
+
+          <article class="post post--row">
+            <img class="post__image" src="https://placehold.co/280x180" alt="" />
+            <div class="post__content">
+              <h3 class="post__title">Sustainability’s Six‑Point Model</h3>
+              <p class="post__meta">Strategy · 6 min</p>
+            </div>
+          </article>
+
+          <article class="post post--row">
+            <img class="post__image" src="https://placehold.co/280x180" alt="" />
+            <div class="post__content">
+              <h3 class="post__title">Inside the Aetherfield Newsletter</h3>
+              <p class="post__meta">News · 3 min</p>
+            </div>
+          </article>
         </div>
+      </section>
+
+      <!-- Call to action section -->
+      <section id="get-started" class="cta">
+        <h2>Ready to operationalize your sustainability goals?</h2>
+        <button class="button button--primary" type="button">Request a demo</button>
+      </section>
+
+      <!-- Careers anchor (simple section for nav target) -->
+      <section id="careers" class="careers" aria-label="Careers">
+        <h2>Careers</h2>
+        <p>
+          We’re building the intelligence layer for climate action.
+        </p>
       </section>
     </main>
 
     <!-- Footer section -->
-    <footer id="contact" class="site-footer">
-      <p>Contact: hello@focusflow.com</p>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#product">Product</a>
+          <a href="#journal">Journal</a>
+          <a href="#about">About</a>
+          <a href="#careers">Careers</a>
+          <a href="#get-started">Get started</a>
+        </nav>
+        <p class="site-footer__copyright">© 2025 · All rights reserved</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>

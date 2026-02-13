@@ -1,6 +1,10 @@
+// Select the main CTA button.
 const ctaButton = document.querySelector("#cta-button");
 
-ctaButton.addEventListener("click", () => {
-  // Simple interaction to confirm the button works
-  alert("Thanks for your interest in FocusFlow!");
-});
+// Add a click listener (no inline onclick).
+if (ctaButton) {
+  ctaButton.addEventListener("click", function () {
+    // Simple interaction to confirm the button works.
+    alert("Thanks — we'll follow up with demo details.");
+  });
+}

@@ -6,6 +6,15 @@
   --color-muted: #64748b;
   --color-primary: #2563eb;
   --color-secondary: #0ea5e9;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-input-border: #cbd5e1;
+  --color-focus-ring: rgba(37, 99, 235, 0.15);
+  --color-disabled-bg: #f1f5f9;
+
+  --radius-md: 8px;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -38,25 +47,51 @@ body {
 }
 
 .button {
-  padding: 10px 16px;
-  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid transparent;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: opacity 0.2s ease;
+}
+
+.button:hover {
+  opacity: 0.85;
 }
 
 .button--primary {
   background: var(--color-primary);
+  color: var(--color-surface);
 }
 
 .button--secondary {
   background: var(--color-secondary);
+  color: var(--color-surface);
+}
+
+.button--ghost {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .card {
-  padding: 16px;
-  border: 1px solid #e2e8f0;
-  background: #ffffff;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
 }
 
 .card__title {
@@ -66,22 +101,40 @@ body {
 
 .card__text {
   margin-top: 0;
+  margin-bottom: 16px;
   color: var(--color-muted);
+  line-height: 1.5;
 }
 
 .field {
   display: block;
+  margin-bottom: 16px;
 }
 
 .field__label {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .field__input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #cbd5f5;
-  border-radius: 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.field__input:disabled {
+  background: var(--color-disabled-bg);
+  cursor: not-allowed;
 }

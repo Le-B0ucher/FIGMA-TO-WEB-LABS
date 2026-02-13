@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP-06 JavaScript Interactions</title>
+    <title>Lab 07 JavaScript Interactions</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,15 +13,54 @@
     </header>
 
     <main>
-      <button class="button" id="open-modal">Open Modal</button>
+      <button class="button" id="open-modal" type="button">Open Modal</button>
 
       <div class="modal" id="modal">
         <div class="modal__content">
           <h2>Modal Title</h2>
           <p>This is a simple modal window.</p>
-          <button class="button button--secondary" id="close-modal">Close</button>
+          <button class="button button--secondary" id="close-modal" type="button">Close</button>
         </div>
       </div>
+
+      <section class="faq" aria-label="Frequently asked questions">
+        <h2>FAQ</h2>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button">What tools do I need?</button>
+          <div class="faq__answer">VS Code and a browser — that's it!</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button">Is this course free?</button>
+          <div class="faq__answer">Yes, all labs are open-source.</div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button">Do I need JavaScript experience?</button>
+          <div class="faq__answer">No, we start from the basics.</div>
+        </div>
+      </section>
+
+      <section class="contact" aria-label="Contact form">
+        <h2>Contact Us</h2>
+
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="name">Name</label>
+            <input class="field__input" type="text" id="name" required minlength="2" />
+            <span class="field__error" id="name-error"></span>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="email">Email</label>
+            <input class="field__input" type="email" id="email" required />
+            <span class="field__error" id="email-error"></span>
+          </div>
+
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
     </main>
 
     <script src="script.js"></script>

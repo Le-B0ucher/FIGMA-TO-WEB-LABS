@@ -5,6 +5,7 @@
   --color-text: #111827;
   --color-muted: #6b7280;
   --color-primary: #1d4ed8;
+  --color-white: #ffffff;
   --font-body: "Source Sans 3", Arial, sans-serif;
   --font-heading: "Playfair Display", "Times New Roman", serif;
 }
@@ -77,7 +78,7 @@ textarea {
   margin-top: 12px;
   padding: 10px 16px;
   background: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
 }

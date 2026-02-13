@@ -5,6 +5,7 @@
   --color-text: #0f172a;
   --color-muted: #64748b;
   --color-primary: #2563eb;
+  --color-white: #ffffff;
 }
 
 * {
@@ -13,7 +14,7 @@
 
 body {
   margin: 0;
-  padding: 20px;
+  padding: 16px;
   font-family: "Source Sans 3", Arial, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
@@ -52,12 +53,16 @@ body {
   margin-top: 12px;
   padding: 10px 16px;
   background: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
 }
 
 @media (min-width: 768px) {
+  body {
+    padding: 32px;
+  }
+
   .site-header {
     flex-direction: row;
     justify-content: space-between;

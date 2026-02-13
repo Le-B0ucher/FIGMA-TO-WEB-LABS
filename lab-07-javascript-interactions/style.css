@@ -5,6 +5,11 @@
   --color-text: #0f172a;
   --color-primary: #2563eb;
   --color-secondary: #0ea5e9;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-muted: #475569;
+  --color-danger: #ef4444;
+  --color-focus-ring: rgba(37, 99, 235, 0.15);
 }
 
 * {
@@ -24,7 +29,7 @@ body {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-surface);
   background: var(--color-primary);
 }
 
@@ -46,9 +51,85 @@ body {
 }
 
 .modal__content {
-  background: #ffffff;
+  background: var(--color-surface);
   padding: 20px;
   max-width: 320px;
   width: 90%;
   border-radius: 6px;
+}
+
+/* =============================================
+   FAQ ACCORDION
+   ============================================= */
+
+.faq {
+  margin-top: 32px;
+}
+
+.faq__answer {
+  display: none;
+  padding: 8px 0;
+  color: var(--color-muted);
+}
+
+.faq__item--open .faq__answer {
+  display: block;
+}
+
+.faq__question {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* =============================================
+   CONTACT FORM
+   ============================================= */
+
+.contact {
+  margin-top: 32px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field__label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.field__error {
+  display: block;
+  color: var(--color-danger);
+  font-size: 13px;
+  min-height: 20px;
+}
+
+.field__input--invalid {
+  border-color: var(--color-danger);
 }
