@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180" role="img" aria-label="Journal thumbnail placeholder">
+  <rect width="280" height="180" fill="#FFFFFF"/>
+  <rect x="18" y="18" width="244" height="144" rx="14" fill="#F6F8FB" stroke="#DBE0EC"/>
+  <rect x="40" y="52" width="190" height="14" rx="6" fill="#E9EEF7"/>
+  <rect x="40" y="78" width="160" height="12" rx="6" fill="#E9EEF7"/>
+  <rect x="40" y="100" width="130" height="12" rx="6" fill="#E9EEF7"/>
+  <rect x="192" y="116" width="52" height="18" rx="9" fill="#FFF546" opacity="0.8"/>
+</svg>

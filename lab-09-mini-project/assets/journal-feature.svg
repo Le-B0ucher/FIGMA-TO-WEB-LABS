@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" role="img" aria-label="Journal image placeholder">
+  <rect width="560" height="320" fill="#F6F8FB"/>
+  <rect x="48" y="48" width="464" height="224" rx="16" fill="#FFFFFF" stroke="#DBE0EC"/>
+  <circle cx="120" cy="126" r="28" fill="#FFF546" opacity="0.8"/>
+  <rect x="170" y="105" width="290" height="18" rx="6" fill="#E9EEF7"/>
+  <rect x="170" y="135" width="250" height="14" rx="6" fill="#E9EEF7"/>
+  <rect x="170" y="160" width="210" height="14" rx="6" fill="#E9EEF7"/>
+  <text x="48" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#6C6C6C">Export and replace: assets/journal-feature.svg</text>
+</svg>
